@@ -63,8 +63,8 @@ for fmt, func in load_functions.items():
 results_df = pd.DataFrame(results)
 logger.info(results_df)
 
-    Format  Size (MB)  Load Time (s)
-0      CSV  41.373181       0.395387
-1  Parquet  18.819997       0.160249
-2  Feather  33.856363       0.149243
-3      ORC  33.806019       0.187391
+#     Format  Size (MB)  Load Time (s)
+# 0      CSV  41.373181       0.395387
+# 1  Parquet  18.819997       0.160249
+# 2  Feather  33.856363       0.149243
+# 3      ORC  33.806019       0.187391
