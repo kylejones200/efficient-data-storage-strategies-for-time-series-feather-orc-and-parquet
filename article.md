@@ -20,7 +20,7 @@ Apache ORC (Optimized Row Columnar) was developed for Hadoop and big data enviro
 
 The columnar format reduces storage space and works well for indexing (provided you know the query patterns that will be used with the data).
 
-> ***Note:*** *ORC support in pandas is relatively new, and you may need
+> *Note:* *ORC support in pandas is relatively new, and you may need
 > to install additional dependencies
 > (`pip install pyarrow`).*
 
