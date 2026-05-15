@@ -7,9 +7,7 @@ import logging
 import os
 import pandas as pd
 import pyarrow as pa
-import pyarrow.feather as feather
 import pyarrow.orc as orc
-import pyarrow.parquet as pq
 import time
 
 logger = logging.getLogger(__name__)
@@ -40,7 +38,7 @@ orc.write_table(table, file_formats["ORC"])
 # Function to measure loading time
 def measure_load_time(file_format, load_func):
     start_time = time.time()
-    df_loaded = load_func()
+    load_func()
     end_time = time.time()
     size = os.path.getsize(file_formats[file_format]) / (1024**2)  # Convert to MB
     return size, end_time - start_time
